@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 15px;
+}
+
+
+.card{
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.pic{
+  width: 100%;
+  min-height: 200px;
+  background-image: url('./images/illustration-hero.svg');
+  border-radius: 20px 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  background-color: white;
+}
+
+.title{
+  margin: 40px auto 20px;
+  background-color: white;
+  width: 80%;
+}
+
+h1{
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+}
+
+p{
+  font-size: 16px;
+  color:  hsl(224, 23%, 55%);
+}
+
+
+.conditions{
+  position: relative;
+  margin: 0 auto 15px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color:  hsl(225, 100%, 98%);
+  border-radius: 15px;
+}
+.music{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.plan_per_year{
+  padding-left: 60px;
+}
+.plan{
+  margin-bottom: 5px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.change_plan>a{
+  font-weight: 700;
+  color:hsl(245, 75%, 52%);
+}
+
+.change_plan>a:hover{
+
+  text-decoration: none;
+  transition: all 10s linear ;
+
+}
+
+.btn{
+  margin: 10px auto 15px;
+  width: 80%;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 12px 15px  rgba(0,0,0,0.3);
+}
+
+.btn:hover{
+  background-color: hsl(245, 75%, 62%);
+  transition: all .2s ease ;
+
+}
+
+.btn>p{
+  font-size: 16px;
+  color: white;
+  padding: 10px 0;
+  font-weight: 900;
+  
+}
+
+.cancel{
+padding: 20px 0 20px;
+}
+
+.cancel>a{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.cancel>a:hover{
+  color:hsl(223, 47%, 23%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 380px){
+
+  .pic{
+    min-height: 170px;
+  }
+
+  .title{
+    margin-top: 30px;
+  }
+  .conditions{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  
+  .btn{
+    width: 90%;
+  }
+}
